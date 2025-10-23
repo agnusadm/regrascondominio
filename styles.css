@@ -113,6 +113,7 @@ a:hover{ text-decoration: underline; }
 
 .app-footer .nav-link{
   color: var(--text-color);
+  margin-top: 10px;
 }
 .app-footer .nav-link[aria-current="page"]{
   color: var(--color-primary);
