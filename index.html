@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Menu de regras do condomínio — navegue pelas áreas comuns e veja as normas." />
+  <title>Menu — Regras do Condomínio</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="color-scheme" content="light only" />
+  <meta name="theme-color" content="#162858" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+</head>
+<body>
+  <a class="visually-hidden-focusable skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+  <header class="app-header navbar navbar-dark fixed-top shadow-sm">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <div class="header-logo d-flex align-items-center">
+        <img src="img/Agnus sem fundo.png" alt="Logo Agnus">
+      </div>
+      <h1 class="navbar-brand m-0 fs-5 fw-semibold"><i class="bi bi-dumbbell me-2" aria-hidden="true"></i>Regras do Condomínio</h1>
+      <span aria-hidden="true" class="placeholder-action"></span>
+    </div>
+  </header>
+
+  <main class="app-main" id="conteudo-principal">
+    <div class="container py-3">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <section class="card app-card animate-fade-slide" aria-labelledby="titulo-menu">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-list-task me-2 text-secondary" aria-hidden="true"></i>
+                <h2 id="titulo-menu" class="h5 card-title m-0">Menu de Regras</h2>
+              </div>
+
+              <p class="text-muted mb-3">Selecione uma área para visualizar as regras.</p>
+              <div class="list-group">
+                <a class="list-group-item list-group-item-action d-flex align-items-center justify-content-between" href="academia.html">
+                  <span><i class="bi bi-shield-check me-2" aria-hidden="true"></i>Academia</span>
+                  <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center justify-content-between" href="piscina.html">
+                  <span><i class="bi bi-droplet-half me-2 text-secondary" aria-hidden="true"></i>Piscina</span>
+                  <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center justify-content-between" href="sauna.html">
+                  <span><i class="bi bi-thermometer-half me-2 text-secondary" aria-hidden="true"></i>Sauna</span>
+                  <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center justify-content-between" href="bicicletario.html">
+                  <span><i class="bi bi-bicycle me-2 text-secondary" aria-hidden="true"></i>Bicicletário</span>
+                  <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center justify-content-between" href="salao-de-festas.html">
+                  <span><i class="bi bi-balloon me-2 text-secondary" aria-hidden="true"></i>Salão de Festas</span>
+                  <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center justify-content-between" href="brinquedoteca-playground.html">
+                  <span><i class="bi bi-puzzle me-2 text-secondary" aria-hidden="true"></i>Brinquedoteca e Playground</span>
+                  <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <nav class="container-fluid small">
+      <ul class="nav justify-content-center gap-3 py-2">
+        <li class="nav-item"><a class="nav-link px-2" href="#" aria-current="page">Início</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Regras</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Contato</a></li>
+      </ul>
+      <div class="text-center pb-2">
+        <span class="text-muted">&copy; <span id="ano-atual"></span> Agnus administradora de condomínios e corretora imobiliária LTDA</span>
+        <a class="ms-2" href="#" aria-label="Ver outras regras">Ver outras regras</a>
+      </div>
+    </nav>
+  </footer>
+
+  <div id="mobile-only-overlay" class="mobile-only-overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title" aria-describedby="overlay-desc" hidden>
+    <div class="overlay-backdrop"></div>
+    <div class="overlay-panel" role="document">
+      <div class="overlay-content">
+        <i class="bi bi-phone fs-1 text-secondary mb-2" aria-hidden="true"></i>
+        <h2 id="overlay-title" class="h5 mb-2">Página disponível apenas em dispositivos móveis</h2>
+        <p id="overlay-desc" class="mb-3">Esta experiência foi otimizada para telas menores.</p>
+        <div class="d-grid">
+          <button id="btn-abrir-mesmo-assim" class="btn btn-primary">Abrir mesmo assim</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a id="whatsapp-fab" class="whatsapp-fab-box" href="#" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp" title="Fale Conosco pelo WhatsApp">
+    <div class="whatsapp-top">
+      <img src="img/lumi.png" alt="Atendente Virtual" class="whatsapp-img" />
+      <i class="bi bi-whatsapp"></i>
+    </div>
+    <span class="whatsapp-text">Fale Conosco</span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
